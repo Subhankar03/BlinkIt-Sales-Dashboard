@@ -27,8 +27,8 @@ with overview:
 	# Expander to show the dataset
 	with st.expander('See the dataset', icon=':material/table:'):
 		st.dataframe(pd.read_excel('BlinkIt Grocery Sales.xlsx'), hide_index=True)
-		st.caption('''_This dataset includes historical sales data across multiple outlets
-		    and categories, used to create the dashboard._''')
+		st.caption('''This dataset includes historical sales data across multiple outlets
+		    and categories, used to create the dashboard.''')
 
 	# Methodology, Key Takeaways, Conclusion
 	st.markdown(md[md.find('## Methodology'):])
